@@ -189,13 +189,18 @@ const CreativesForm: React.FC = () => {
                       name={platform.toLowerCase()}
                       value={formData[platform.toLowerCase()]}
                       onChange={handleChange}
-                      className="w-11/12 mt-1 p-2 rounded-lg bg-[#16213E] border-none focus:ring-2 focus:ring-[#4F77FF]"
+                      className="w-10/12 mt-1 p-2 rounded-lg bg-[#16213E] border-none focus:ring-2 focus:ring-[#4F77FF] "
                       placeholder={`Enter your ${platform} profile`}
                     />
+
+                    <button // A hack, need to think about a smarter way to do it.
+                      disabled={true}
+                      className='w-1/12 '
+                    ></button>
                     <button
                       type="button"
                       onClick={() => handleRemoveSocialMedia(platform)}
-                      className=" bg-[#4F77FF] hover:bg-[#789AFF] ml-1/12 text-white font-semibold py-2 px-4 rounded-lg shadow-md"
+                      className="w-1/12 bg-[#4F77FF] hover:bg-[#789AFF] text-white font-semibold py-2 px-4 rounded-lg shadow-md justify-self-end"
                     >
                       -
                     </button>
