@@ -15,7 +15,7 @@ const outfit = Outfit({ weight: '400', subsets: ["latin"] });
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
-  const navLinks = [
+  const navLinks : any = [
   ];
 
   return (
